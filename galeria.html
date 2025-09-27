@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Galeria de imagens do currículo fictício.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria - Currículo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <aside id="sideMenu" class="side-menu" aria-hidden="true">
+    <div class="side-header">
+      <img src="images/avatar.png" alt="Avatar" width="56" height="56">
+      <div>
+        <strong>Felippe Curbelo</strong><br>
+        <small>Pereira</small>
+      </div>
+    </div>
+    <nav class="side-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="side-footer">
+      <a href="mailto:lksp232@gmail.com">lksp232@gmail.com</a><br>
+      <a href="tel:+5511954909864">+55 (11) 95490-9864</a>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <header>
+    <div class="topbar small">
+      <button id="menuToggle" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="sideMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <h1>Galeria</h1>
+      <nav class="nav-top">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Fotos do Grupo</h2>
+      <table class="gallery-table">
+        <tr>
+          <td><img src="images/gallery1.png" alt="Membro 1"></td>
+          <td><img src="images/gallery2.png" alt="Membro 2"></td>
+          <td><img src="images/gallery3.png" alt="Membro 3"></td>
+        </tr>
+        <tr>
+          <td><img src="images/gallery4.png" alt="Membro 4"></td>
+          <td><img src="images/gallery5.png" alt="Membro 5"></td>
+          <td><img src="images/gallery6.png" alt="Membro 6"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Vídeo Do Cristiano Ronaldo</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZsZ4-HyjCg" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <p><a href="index.html" class="back-link">Voltar à página principal</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Currículo Acadêmico</p>
+  </footer>
+</body>
+</html>

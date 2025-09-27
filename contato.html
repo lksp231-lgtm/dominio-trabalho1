@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Formulário de contato para o currículo fictício.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Currículo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <aside id="sideMenu" class="side-menu" aria-hidden="true">
+    <div class="side-header">
+      <img src="images/avatar.png" alt="Avatar" width="56" height="56">
+      <div>
+        <strong>Felippe Curbelo</strong><br>
+        <small>Pereira</small>
+      </div>
+    </div>
+    <nav class="side-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="side-footer">
+      <a href="mailto:lksp232@gmail.com">lksp232@gmail.com</a><br>
+      <a href="tel:+5511954909864">+55 (11) 95490-9864</a>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <header>
+    <div class="topbar small">
+      <button id="menuToggle" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="sideMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <h1>Contato</h1>
+      <nav class="nav-top">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Formulário para Contato</h2>
+      <form id="contactForm" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome (obrigatório)</label>
+          <input id="nome" name="nome" type="text" required>
+
+          <label for="email">E-mail (obrigatório)</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="idade">Idade (números, obrigatório)</label>
+          <input id="idade" name="idade" type="number" min="0" required>
+
+          <label for="telefone">Telefone (obrigatório)</label>
+          <input id="telefone" name="telefone" type="tel" required>
+
+          <label for="nasc">Data de nascimento (opcional)</label>
+          <input id="nasc" name="nascimento" type="date">
+
+          <label for="sexo">Sexo (opcional)</label>
+          <select id="sexo" name="sexo">
+            <option value="">--</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="O">Outro</option>
+          </select>
+
+          <label for="estado_civil">Estado Civil (opcional)</label>
+          <input id="estado_civil" name="estado_civil" type="text">
+        </fieldset>
+
+        <fieldset>
+          <legend>Dados da Empresa (opcional)</legend>
+          <label for="cnpj">CNPJ</label>
+          <input id="cnpj" name="cnpj" type="text">
+
+          <label for="razao">Razão Social</label>
+          <input id="razao" name="razao" type="text">
+
+          <label for="ramo">Ramo de atuação</label>
+          <input id="ramo" name="ramo" type="text">
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="cep">CEP (obrigatório)</label>
+          <input id="cep" name="cep" type="text" required>
+
+          <label for="tipo_log">Tipo de logradouro (obrigatório)</label>
+          <select id="tipo_log" name="tipo_logradouro" required>
+            <option value="">--</option>
+            <option value="Rua">Rua</option>
+            <option value="Avenida">Avenida</option>
+            <option value="Praça">Praça</option>
+          </select>
+
+          <label for="logradouro">Logradouro (obrigatório)</label>
+          <input id="logradouro" name="logradouro" type="text" required>
+
+          <label for="cidade">Cidade (obrigatório)</label>
+          <input id="cidade" name="cidade" type="text" required>
+
+          <label for="estado">Estado (obrigatório)</label>
+          <input id="estado" name="estado" type="text" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Descrição detalhada do interesse</legend>
+          <textarea name="descricao" rows="5" placeholder="Descreva seu interesse..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Outro</legend>
+          <label><input type="checkbox" name="opt1"> Receber novidades</label>
+          <label><input type="checkbox" name="opt2"> Disponível para viagens</label>
+          <label><input type="checkbox" name="opt3"> Trabalho remoto</label>
+          <label><input type="checkbox" name="opt4"> Aceita estágio</label>
+
+          <p>Preferência de contrato:</p>
+          <label><input type="radio" name="contrato" value="clt"> CLT</label>
+          <label><input type="radio" name="contrato" value="pj"> PJ</label>
+          <label><input type="radio" name="contrato" value="estagio"> Estágio</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p><a href="index.html" class="back-link">Voltar à página principal</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Currículo Acadêmico</p>
+  </footer>
+</body>
+</html>
